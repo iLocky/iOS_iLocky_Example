@@ -4,5 +4,5 @@ iOS iLocky example by using iLocky iOS SDK
 v1.0
 
 initial commit
-
-can generate passport(key) in app (will be removed in near future)
+* simple example to show the list of passports
+* can generate passport(key) in app (will be removed in near future)
