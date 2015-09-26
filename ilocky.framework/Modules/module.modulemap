@@ -1,0 +1,10 @@
+framework module ILocky {
+  umbrella header "ILocky.h"
+
+  export *
+  module * { export * }
+}
+
+module ILocky.Swift {
+    header "ILocky-Swift.h"
+}

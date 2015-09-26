@@ -35,7 +35,7 @@ class PassportTableViewController: UITableViewController, ILockyEventDelegate {
         /********************************************************************************************/
 
         ILockyPassport.importPassport(passport, error: nil)
-        ILocky.iLockyBLEManager.iLockyEventDelegate=self
+        ILocky.setEventDelegate(self)
         soundUsePassport=NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("open", ofType: "mp3")!)
         soundNotCloseEnough=NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("notclose", ofType: "wav")!)
         do {

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		791C4E401BB053480080B066 /* ILocky.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 791C4E3D1BB0532F0080B066 /* ILocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		796AD8B11BB05A0B00D1573D /* ILocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD8B01BB05A0B00D1573D /* ILocky.framework */; settings = {ASSET_TAGS = (); }; };
 		796AD8BB1BB67AE000D1573D /* notclose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 796AD8B91BB67AE000D1573D /* notclose.wav */; settings = {ASSET_TAGS = (); }; };
 		796AD8BC1BB67AE000D1573D /* open.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796AD8BA1BB67AE000D1573D /* open.mp3 */; settings = {ASSET_TAGS = (); }; };
 		7976D2A51B9C0B390094EA82 /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976D2A41B9C0B390094EA82 /* AFViewShaker.m */; };
+		7999D0AB1BB6D56300D267DC /* ILocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD8B01BB05A0B00D1573D /* ILocky.framework */; };
+		7999D0AC1BB6D56300D267DC /* ILocky.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD8B01BB05A0B00D1573D /* ILocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79C54C511B9AEA32003904B8 /* PassportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C54C501B9AEA32003904B8 /* PassportTableViewController.swift */; };
 		79C54C541B9AFD7B003904B8 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C54C531B9AFD7B003904B8 /* key.png */; };
 		79E0B77E1B9290F600726B37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0B77D1B9290F600726B37 /* AppDelegate.swift */; };
@@ -39,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				791C4E401BB053480080B066 /* ILocky.framework in Embed Frameworks */,
+				7999D0AC1BB6D56300D267DC /* ILocky.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +47,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		791C4E3D1BB0532F0080B066 /* ILocky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ILocky.framework; path = "/Users/richard/Dropbox/iOS/iLocky-Test/lock/ILocky.framework"; sourceTree = "<absolute>"; };
 		796AD8B01BB05A0B00D1573D /* ILocky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILocky.framework; sourceTree = "<group>"; };
 		796AD8B91BB67AE000D1573D /* notclose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notclose.wav; sourceTree = "<group>"; };
 		796AD8BA1BB67AE000D1573D /* open.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = open.mp3; sourceTree = "<group>"; };
@@ -73,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796AD8B11BB05A0B00D1573D /* ILocky.framework in Frameworks */,
+				7999D0AB1BB6D56300D267DC /* ILocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +229,6 @@
 					};
 					79E0B78F1B9290F600726B37 = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 79E0B7771B9290F600726B37;
 					};
 				};
 			};
@@ -446,7 +444,6 @@
 		79E0B79E1B9290F600726B37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -458,14 +455,12 @@
 				INFOPLIST_FILE = lockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = ILockyExample;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ILockyExample.app/ILockyExample";
 			};
 			name = Debug;
 		};
 		79E0B79F1B9290F600726B37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -473,7 +468,6 @@
 				INFOPLIST_FILE = lockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = ILockyExample;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ILockyExample.app/ILockyExample";
 			};
 			name = Release;
 		};
