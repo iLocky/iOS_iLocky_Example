@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6D1BAF855699679D07AC661202539CB54CD30CD7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6D1BAF855699679D07AC661202539CB54CD30CD7" : 0,
+    "D02CA069C5344531393281F7C14E91AA1F6B4EDD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1D1BD45A-8318-4AA9-B7E6-11A66E2EF09A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6D1BAF855699679D07AC661202539CB54CD30CD7" : "lock\/",
+    "D02CA069C5344531393281F7C14E91AA1F6B4EDD" : "..\/iLockySDKRelease"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ILockyExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ILockyExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iLocky\/iOS_iLocky_Example.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D1BAF855699679D07AC661202539CB54CD30CD7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iLocky\/iOS_iLocky_SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D02CA069C5344531393281F7C14E91AA1F6B4EDD"
+    }
+  ]
+}

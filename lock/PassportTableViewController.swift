@@ -19,8 +19,10 @@ class PassportTableViewController: UITableViewController, ILockyEventDelegate {
         super.viewDidLoad()
         
         ILockyPassport.initialize()
+        print(ILockyPassport.getDeviceUuid())
         ILockyPassport.removeAllInvalidPassports()
-        
+        let str:String!="\u{7B}\"passport_id\": 119,\"passport\":\"eyJpbG9ja3lfaWQiOiJjNGI5ZmQ0MyIsInV1aWQiOiIwRjZGODQ4OS02RTY1LTQ0MDktOUY5RS0yN0UyOTg4QjQwOTgiLCJzdGFydF90aW1lIjoiMjAxNS0xMS0wN1QwMDowMDowMCswODAwIiwic3RvcF90aW1lIjoiMjAxNS0xMS0yMFQwMDowMDowMCswODAwIiwidXNlX2xpbWl0IjowLCJyZmlkX2R1cmF0aW9uIjoxMDAwLCJhY3Rpb24iOiJvcGVuIGRvb3IiLCJyZXZva2VfbGVnYWN5Ijp0cnVlfQ==\"\u{7D}"
+
         /** CAUTION: any passport should be genetered in our global server.
          ** this iLocky passport(key) generator is only for testing. it will be removed in near future.
          ********************************************************************************************/
@@ -34,7 +36,7 @@ class PassportTableViewController: UITableViewController, ILockyEventDelegate {
             .setRevokePast(true)
         /********************************************************************************************/
 
-        ILockyPassport.importPassport(passport, error: nil)
+        ILockyPassport.importPassport(str, error: nil)
         ILocky.setEventDelegate(self)
         soundUsePassport=NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("open", ofType: "mp3")!)
         soundNotCloseEnough=NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("notclose", ofType: "wav")!)

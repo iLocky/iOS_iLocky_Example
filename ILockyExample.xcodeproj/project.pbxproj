@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		796AD8BB1BB67AE000D1573D /* notclose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 796AD8B91BB67AE000D1573D /* notclose.wav */; settings = {ASSET_TAGS = (); }; };
-		796AD8BC1BB67AE000D1573D /* open.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796AD8BA1BB67AE000D1573D /* open.mp3 */; settings = {ASSET_TAGS = (); }; };
+		791739E81BF10EFD00A6EA31 /* ILocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791739E71BF10EFD00A6EA31 /* ILocky.framework */; };
+		791739E91BF10EFD00A6EA31 /* ILocky.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 791739E71BF10EFD00A6EA31 /* ILocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		796AD8BB1BB67AE000D1573D /* notclose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 796AD8B91BB67AE000D1573D /* notclose.wav */; };
+		796AD8BC1BB67AE000D1573D /* open.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796AD8BA1BB67AE000D1573D /* open.mp3 */; };
 		7976D2A51B9C0B390094EA82 /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976D2A41B9C0B390094EA82 /* AFViewShaker.m */; };
-		7999D0AB1BB6D56300D267DC /* ILocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD8B01BB05A0B00D1573D /* ILocky.framework */; };
-		7999D0AC1BB6D56300D267DC /* ILocky.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD8B01BB05A0B00D1573D /* ILocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79C54C511B9AEA32003904B8 /* PassportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C54C501B9AEA32003904B8 /* PassportTableViewController.swift */; };
 		79C54C541B9AFD7B003904B8 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C54C531B9AFD7B003904B8 /* key.png */; };
 		79E0B77E1B9290F600726B37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0B77D1B9290F600726B37 /* AppDelegate.swift */; };
@@ -33,13 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		79EFD81B1BB04E9B008B49F7 /* Embed Frameworks */ = {
+		791739E61BF10ECB00A6EA31 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7999D0AC1BB6D56300D267DC /* ILocky.framework in Embed Frameworks */,
+				791739E91BF10EFD00A6EA31 /* ILocky.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		796AD8B01BB05A0B00D1573D /* ILocky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILocky.framework; sourceTree = "<group>"; };
+		791739E71BF10EFD00A6EA31 /* ILocky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILocky.framework; sourceTree = "<group>"; };
 		796AD8B91BB67AE000D1573D /* notclose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notclose.wav; sourceTree = "<group>"; };
 		796AD8BA1BB67AE000D1573D /* open.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = open.mp3; sourceTree = "<group>"; };
 		7976D2A31B9C0B390094EA82 /* AFViewShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewShaker.h; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7999D0AB1BB6D56300D267DC /* ILocky.framework in Frameworks */,
+				791739E81BF10EFD00A6EA31 /* ILocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +115,8 @@
 		79E0B76F1B9290F600726B37 = {
 			isa = PBXGroup;
 			children = (
+				791739E71BF10EFD00A6EA31 /* ILocky.framework */,
 				79EFD81C1BB05044008B49F7 /* bridge-header.h */,
-				796AD8B01BB05A0B00D1573D /* ILocky.framework */,
 				79E0B77A1B9290F600726B37 /* lock */,
 				79E0B7931B9290F600726B37 /* lockTests */,
 				79E0B7791B9290F600726B37 /* Products */,
@@ -184,7 +184,7 @@
 				79E0B7741B9290F600726B37 /* Sources */,
 				79E0B7751B9290F600726B37 /* Frameworks */,
 				79E0B7761B9290F600726B37 /* Resources */,
-				79EFD81B1BB04E9B008B49F7 /* Embed Frameworks */,
+				791739E61BF10ECB00A6EA31 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,6 +226,7 @@
 				TargetAttributes = {
 					79E0B7771B9290F600726B37 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 32HN273XZQ;
 					};
 					79E0B78F1B9290F600726B37 = {
 						CreatedOnToolsVersion = 6.4;
@@ -413,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -429,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
